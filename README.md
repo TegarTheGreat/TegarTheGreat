@@ -142,21 +142,27 @@ clean UI, MIT-licensed and open to contributions.
 
 ---
 
-## GitHub Stats
+## Repo Activity
+
+Live status across my main public repositories.
+
+| Repository | What it is | Language | Stars | Last update |
+| :--- | :--- | :--- | :--- | :--- |
+| **[SuperMD](https://github.com/TegarTheGreat/SuperMD)** | Anti-slop system prompt toolkit | ![](https://img.shields.io/github/languages/top/TegarTheGreat/SuperMD?style=flat-square&color=1E40AF&label=) | ![](https://img.shields.io/github/stars/TegarTheGreat/SuperMD?style=flat-square&color=06B6D4&label=stars) | ![](https://img.shields.io/github/last-commit/TegarTheGreat/SuperMD?style=flat-square&color=334155&label=updated) |
+| **[DalangAI](https://github.com/TegarTheGreat/DalangAI)** | AI-powered video editor | ![](https://img.shields.io/github/languages/top/TegarTheGreat/DalangAI?style=flat-square&color=1E40AF&label=) | ![](https://img.shields.io/github/stars/TegarTheGreat/DalangAI?style=flat-square&color=06B6D4&label=stars) | ![](https://img.shields.io/github/last-commit/TegarTheGreat/DalangAI?style=flat-square&color=334155&label=updated) |
+| **[SotongAssistant](https://github.com/TegarTheGreat/SotongAssistant)** | Telegram group assistant | ![](https://img.shields.io/github/languages/top/TegarTheGreat/SotongAssistant?style=flat-square&color=1E40AF&label=) | ![](https://img.shields.io/github/stars/TegarTheGreat/SotongAssistant?style=flat-square&color=06B6D4&label=stars) | ![](https://img.shields.io/github/last-commit/TegarTheGreat/SotongAssistant?style=flat-square&color=334155&label=updated) |
+| **[QuidChat](https://github.com/TegarTheGreat/QuidChat)** | Real-time chat application | ![](https://img.shields.io/github/languages/top/TegarTheGreat/QuidChat?style=flat-square&color=1E40AF&label=) | ![](https://img.shields.io/github/stars/TegarTheGreat/QuidChat?style=flat-square&color=06B6D4&label=stars) | ![](https://img.shields.io/github/last-commit/TegarTheGreat/QuidChat?style=flat-square&color=334155&label=updated) |
 
 <!--
-  These two cards are rendered by the shared public github-readme-stats instance.
-  If they ever show "Maximum retries exceeded", it is upstream rate limiting, not a
-  broken link. Fix: deploy your own instance (free) and swap the hostname below.
+  The classic github-readme-stats cards used to sit here, but the shared public
+  instance (github-readme-stats.vercel.app) is heavily rate limited and renders as
+  a broken image most of the time. To bring them back, deploy your own free
+  instance and paste your Vercel hostname in place of the one below:
   https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own-vercel-instance
+
+  <img height="165" alt="GitHub stats" src="https://YOUR-INSTANCE.vercel.app/api?username=TegarTheGreat&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight&bg_color=0B1120&title_color=06B6D4&icon_color=3B82F6&text_color=94A3B8" />
+  <img height="165" alt="Most used languages" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=TegarTheGreat&layout=compact&langs_count=8&hide_border=true&theme=tokyonight&bg_color=0B1120&title_color=06B6D4&text_color=94A3B8" />
 -->
-
-<div align="center">
-
-<img height="165" alt="Tegar's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=TegarTheGreat&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight&bg_color=0B1120&title_color=06B6D4&icon_color=3B82F6&text_color=94A3B8" />
-<img height="165" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TegarTheGreat&layout=compact&langs_count=8&hide_border=true&theme=tokyonight&bg_color=0B1120&title_color=06B6D4&text_color=94A3B8" />
-
-</div>
 
 ---
 
