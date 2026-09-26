@@ -57,11 +57,18 @@ TERMINAL = [
 
 PROJECTS = [
     dict(
-        slug="supermd", name="SuperMD", color="violet", icon="markdown",
-        sticker="npx supermd",
-        tagline="A universal anti-slop system prompt that makes AI answer instead of perform. Composable for any profession.",
-        chips=["103 field modules", "34/34 blind wins", "EN + ID"],
-        tech="Markdown · Node CLI · npm",
+        slug="agentium", name="Agentium", color="orange", icon="terminal",
+        sticker="~6 ms startup",
+        tagline="A fast, minimal coding agent for the terminal. One static binary, any model provider, sandboxed by default.",
+        chips=["8.8 MB binary", "19 providers", "/undo every turn"],
+        tech="Go · MCP · Agent Client Protocol",
+    ),
+    dict(
+        slug="palugada", name="PALUGADA", color="violet", icon="building",
+        sticker="apa lu mau, gua ada",
+        tagline="A control plane for companies run by AI agents. Agents do the work; you only decide what cannot be undone.",
+        chips=["4 risk tiers", "2FA on the irreversible", "EN + ID"],
+        tech="TypeScript · PostgreSQL · React",
     ),
     dict(
         slug="dalangai", name="DalangAI", color="yellow", icon="gunungan",
@@ -71,11 +78,11 @@ PROJECTS = [
         tech="TypeScript · Remotion · React",
     ),
     dict(
-        slug="sotongassistant", name="SotongAssistant", color="mint", icon="squid",
-        sticker="lives in Telegram",
-        tagline="An all-in-one Telegram assistant for moderation, onboarding, Business chats and AI. Set up entirely in chat.",
-        chips=["30+ AI actions", "10 languages", "any model"],
-        tech="TypeScript · grammY · SQLite",
+        slug="supermd", name="SuperMD", color="mint", icon="markdown",
+        sticker="npx supermd",
+        tagline="A universal anti-slop system prompt that makes AI answer instead of perform. Composable for any profession.",
+        chips=["103 field modules", "34/34 blind wins", "EN + ID"],
+        tech="Markdown · Node CLI · npm",
     ),
     dict(
         slug="quidchat", name="QuidChat", color="pink", icon="bubble",
@@ -84,14 +91,35 @@ PROJECTS = [
         chips=["cites every claim", "14 AI providers", "6 channels"],
         tech="TypeScript · Postgres · pgvector",
     ),
+    dict(
+        slug="skifity", name="Skifity", color="sky", icon="server",
+        sticker="server in, URLs out",
+        tagline="Self-hosted apps on Kubernetes without learning Kubernetes. You give it a server, it gives you URLs.",
+        chips=["35 MiB panel", "282 one-click apps", "5 languages"],
+        tech="Go · Kubernetes · k3s",
+    ),
+    dict(
+        slug="sotongassistant", name="SotongAssistant", color="mint", icon="squid",
+        sticker="lives in Telegram",
+        tagline="An all-in-one Telegram assistant for moderation, onboarding, Business chats and AI. Set up entirely in chat.",
+        chips=["30+ AI actions", "10 languages", "any model"],
+        tech="TypeScript · grammY · SQLite",
+    ),
+    dict(
+        slug="more", name="More in the workshop", color="soft", icon="plus",
+        sticker=None,
+        tagline="Experiments, forks and things still cooking. Browse every repository on my GitHub.",
+        chips=["experiments", "forks", "work in progress"],
+        tech="github.com/TegarTheGreat",
+    ),
 ]
 
 STACK = [
-    ("LANGUAGES", ["TypeScript", "JavaScript", "Python", "PHP"]),
+    ("LANGUAGES", ["TypeScript", "Go", "JavaScript", "Python", "PHP"]),
     ("WEB", ["Node.js", "React", "Vite", "Hono", "Laravel", "Tailwind CSS"]),
     ("DATA", ["PostgreSQL", "SQLite", "Zod"]),
     ("AI & BOTS", ["Claude Code", "MCP", "Telegram", "Markdown"]),
-    ("SHIP", ["Git", "GitHub Actions", "Docker", "pnpm", "npm", "Biome", "Linux"]),
+    ("SHIP", ["Git", "GitHub Actions", "Docker", "Kubernetes", "pnpm", "npm", "Biome", "Linux"]),
 ]
 
 BUTTONS = [
@@ -116,13 +144,13 @@ THEMES = {
     "light": dict(
         bg="#FAF7F2", card="#FFFFFF", fg="#1C1B2E", muted="#57536E", line="#1C1B2E",
         shadow="#1C1B2E", violet="#7C3AED", on_violet="#FFFFFF", soft="#EDE4FF",
-        yellow="#FFD23F", pink="#FFA3C4", mint="#8BE3B6", ok="#15803D",
+        yellow="#FFD23F", pink="#FFA3C4", mint="#8BE3B6", sky="#A5CCFF", orange="#FFB75E", ok="#15803D",
         dot="#1C1B2E", dot_op="0.10",
     ),
     "dark": dict(
         bg="#1C1B2E", card="#262539", fg="#FAF7F2", muted="#BDB9D3", line="#FAF7F2",
         shadow="#7C3AED", violet="#A78BFA", on_violet="#1C1B2E", soft="#3A2C66",
-        yellow="#FFD23F", pink="#FFA3C4", mint="#8BE3B6", ok="#8BE3B6",
+        yellow="#FFD23F", pink="#FFA3C4", mint="#8BE3B6", sky="#A5CCFF", orange="#FFB75E", ok="#8BE3B6",
         dot="#FAF7F2", dot_op="0.07",
     ),
 }
@@ -340,10 +368,25 @@ def arrow(x, y, color):
 
 def project_icon(kind, cx, cy, t, icons):
     if kind == "markdown":
-        p = icons["Markdown"]["path"]
-        return f'<path transform="translate({cx - 17} {cy - 17}) scale(1.4167)" fill="#FFFFFF" d="{p}"/>' \
-            if t["on_violet"] == "#FFFFFF" else \
-            f'<path transform="translate({cx - 17} {cy - 17}) scale(1.4167)" fill="{INK}" d="{p}"/>'
+        return f'<path transform="translate({cx - 17} {cy - 17}) scale(1.4167)" fill="{INK}" d="{icons["Markdown"]["path"]}"/>'
+    if kind == "terminal":
+        return (f'<g transform="translate({cx} {cy})" fill="none" stroke="{INK}" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">'
+                f'<path d="M-15-10-4 0-15 10"/><path d="M1 12H16"/></g>')
+    if kind == "building":
+        fg = t["on_violet"]
+        win = "".join(f'<rect x="{x}" y="{y}" width="5" height="5" rx="1" fill="{t["violet"]}"/>'
+                      for y in (-12, -3) for x in (-8, 3))
+        return (f'<g transform="translate({cx} {cy})"><rect x="-14" y="-19" width="28" height="38" rx="3" fill="{fg}"/>'
+                f'{win}<rect x="-4" y="7" width="8" height="12" rx="1.5" fill="{t["violet"]}"/></g>')
+    if kind == "server":
+        return (f'<g transform="translate({cx} {cy})">'
+                + "".join(f'<rect x="-17" y="{y}" width="34" height="13" rx="3.5" fill="{INK}"/>'
+                          f'<circle cx="-10" cy="{y + 6.5}" r="2.2" fill="#8BE3B6"/><rect x="-3" y="{y + 5}" width="14" height="3" rx="1.5" fill="#A5CCFF"/>'
+                          for y in (-15, 2))
+                + "</g>")
+    if kind == "plus":
+        return (f'<g transform="translate({cx} {cy})" stroke="{t["fg"]}" stroke-width="5" stroke-linecap="round">'
+                f'<path d="M0-13V13M-13 0H13"/></g>')
     if kind == "gunungan":
         return (f'<g transform="translate({cx} {cy})"><path fill="{INK}" d="M0-22C9-13 16-2 14 9 13 14 9 17 0 17-9 17-13 14-14 9-16-2-9-13 0-22Z"/>'
                 f'<path d="M0-12V12M0 0 7-6M0 0-7-6M0 7 6 2M0 7-6 2" stroke="#FFD23F" stroke-width="2" stroke-linecap="round" fill="none"/>'
@@ -606,7 +649,7 @@ def build_terminal(theme):
 def build_project(theme, p, icons, lines_needed):
     t = THEMES[theme]
     color = t[p["color"]]
-    on_color = t["on_violet"] if p["color"] == "violet" else INK
+    on_color = t["on_violet"] if p["color"] == "violet" else (t["fg"] if p["color"] == "soft" else INK)
     W = 600
     tag_top = 146
     chips_y = tag_top + 27 * lines_needed + 6
@@ -616,17 +659,21 @@ def build_project(theme, p, icons, lines_needed):
     s.add(box(10, 10, W - 32, H - 30, 22, t["card"], t, shadow=9))
     s.add(box(38, 38, 66, 66, 16, color, t, stroke=2.6, shadow=4))
     s.add(project_icon(p["icon"], 71, 71, t, icons))
+    max_name = 250
+    if p["sticker"]:
+        sw = font("body8").width(p["sticker"], 14.5)
+        max_name = W - 38 - sw - 30 - 124 - 18
     name_size = 36
-    while font("display").width(p["name"], name_size, -0.8) > 260:
+    while font("display").width(p["name"], name_size, -0.8) > max_name:
         name_size -= 1
     s.add(s.text("display", p["name"], 124, 84, name_size, t["fg"], ls=-0.8)[0])
 
-    _, sw, _ = s.text("body8", p["sticker"], 0, 0, 14.5, on_color)
-    stx = W - 38 - sw - 30
-    s.add(f'<g transform="translate({f1(stx)} 30) rotate(4)"><g>'
-          + box(0, 0, sw + 30, 34, 17, t["soft"] if p["color"] == "violet" else color, t, stroke=2.2, shadow=3.5)
-          + s.text("body8", p["sticker"], 15, 22.5, 14.5, t["fg"] if p["color"] == "violet" else INK)[0]
-          + wiggle(2.2, 4.4, 0.3) + "</g></g>")
+    if p["sticker"]:
+        stx = W - 38 - sw - 30
+        s.add(f'<g transform="translate({f1(stx)} 30) rotate(4)"><g>'
+              + box(0, 0, sw + 30, 34, 17, t["soft"] if p["color"] in ("violet", "soft") else color, t, stroke=2.2, shadow=3.5)
+              + s.text("body8", p["sticker"], 15, 22.5, 14.5, t["fg"] if p["color"] in ("violet", "soft") else INK)[0]
+              + wiggle(2.2, 4.4, 0.3) + "</g></g>")
 
     for i, line in enumerate(wrap("body6", p["tagline"], 18.5, W - 84)):
         s.add(s.text("body6", line, 40, tag_top + i * 27, 18.5, t["muted"])[0])

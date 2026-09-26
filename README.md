@@ -33,22 +33,26 @@ gets real-world reps.
 
 ### 🧪 Things I've built
 
-Open source, built solo, and documented like a whole team is watching. The common thread: **AI you can trust** — it cites, it measures itself, and it says so when it doesn't know.
+All public, all built solo, and documented like a whole team is watching. The common thread is
+**AI you can trust**: it cites its sources, measures itself, asks before anything irreversible,
+and says so when it doesn't know.
 
 <p align="center">
-  <a href="https://github.com/TegarTheGreat/SuperMD"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-supermd-dark.svg"><img src="assets/project-supermd-light.svg" width="49%" alt="SuperMD: a universal anti-slop system prompt, composable for any profession. 103 field modules, 34 of 34 blind wins, English and Indonesian."></picture></a>
+  <a href="https://github.com/TegarTheGreat/Agentium"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-agentium-dark.svg"><img src="assets/project-agentium-light.svg" width="49%" alt="Agentium: a fast, minimal coding agent for the terminal. One static 8.8 MB binary, 19 model providers, sandboxed by default, undo for every turn."></picture></a>
+  <a href="https://github.com/TegarTheGreat/PALUGADA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-palugada-dark.svg"><img src="assets/project-palugada-light.svg" width="49%" alt="PALUGADA: a control plane for companies run by AI agents. Agents do the work; the owner only decides what cannot be undone, with a second factor."></picture></a>
   <a href="https://github.com/TegarTheGreat/DalangAI"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-dalangai-dark.svg"><img src="assets/project-dalangai-light.svg" width="49%" alt="DalangAI: an agent-piloted video editor, Cursor for video. Over 1,200 tests, an MCP server, and it runs without API keys."></picture></a>
-  <a href="https://github.com/TegarTheGreat/SotongAssistant"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-sotongassistant-dark.svg"><img src="assets/project-sotongassistant-light.svg" width="49%" alt="SotongAssistant: an all-in-one Telegram assistant for moderation, onboarding, Business chats and AI, set up entirely in chat."></picture></a>
+  <a href="https://github.com/TegarTheGreat/SuperMD"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-supermd-dark.svg"><img src="assets/project-supermd-light.svg" width="49%" alt="SuperMD: a universal anti-slop system prompt, composable for any profession. 103 field modules, 34 of 34 blind wins, English and Indonesian."></picture></a>
   <a href="https://github.com/TegarTheGreat/QuidChat"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-quidchat-dark.svg"><img src="assets/project-quidchat-light.svg" width="49%" alt="QuidChat: a support assistant for businesses that never makes things up. Every claim cites your documents, or it declines."></picture></a>
+  <a href="https://github.com/TegarTheGreat/Skifity"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-skifity-dark.svg"><img src="assets/project-skifity-light.svg" width="49%" alt="Skifity: self-hosted apps on Kubernetes without learning Kubernetes. A 35 MiB panel and 282 one-click apps."></picture></a>
+  <a href="https://github.com/TegarTheGreat/SotongAssistant"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-sotongassistant-dark.svg"><img src="assets/project-sotongassistant-light.svg" width="49%" alt="SotongAssistant: an all-in-one Telegram assistant for moderation, onboarding, Business chats and AI, set up entirely in chat."></picture></a>
+  <a href="https://github.com/TegarTheGreat?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-more-dark.svg"><img src="assets/project-more-light.svg" width="49%" alt="More in the workshop: experiments, forks and things still cooking. Browse every repository."></picture></a>
 </p>
-
-<p align="right"><a href="https://github.com/TegarTheGreat?tab=repositories"><b>See every repository →</b></a></p>
 
 ### 🧰 Toolbox
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img src="assets/stack-light.svg" width="100%" alt="Languages: TypeScript, JavaScript, Python, PHP. Web: Node.js, React, Vite, Hono, Laravel, Tailwind CSS. Data: PostgreSQL, SQLite, Zod. AI and bots: Claude Code, MCP, Telegram, Markdown. Ship: Git, GitHub Actions, Docker, pnpm, npm, Biome, Linux.">
+  <img src="assets/stack-light.svg" width="100%" alt="Languages: TypeScript, Go, JavaScript, Python, PHP. Web: Node.js, React, Vite, Hono, Laravel, Tailwind CSS. Data: PostgreSQL, SQLite, Zod. AI and bots: Claude Code, MCP, Telegram, Markdown. Ship: Git, GitHub Actions, Docker, Kubernetes, pnpm, npm, Biome, Linux.">
 </picture>
 
 ### ✍️ Latest from my blog
