@@ -1,0 +1,41 @@
+# Keeps the "Latest from my blog" list in README.md in sync with the RSS feed
+# at tegarprayuda.com. Commits only when the list actually changed.
+name: Latest blog posts
+
+on:
+  schedule:
+    - cron: "43 23 * * *" # 06:43 WIB
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/blog.yml
+      - scripts/update_blog.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Refresh the blog list
+        run: python3 scripts/update_blog.py
+
+      - name: Commit if it changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No new posts."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -q -m "Update latest blog posts"
+          git push -q origin "HEAD:${GITHUB_REF_NAME}"

@@ -1,181 +1,87 @@
-<div align="center">
-  <a href="https://tegarprayuda.com">
-    <img src="./assets/banner.svg" alt="Tegar Prayuda — AI Engineer & Product Builder — tegarprayuda.com" width="100%" />
-  </a>
-</div>
-
-<div align="center">
-
-[![Website](https://img.shields.io/badge/tegarprayuda.com-06B6D4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://tegarprayuda.com)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tegarprayuda3@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TegarTheGreat)
-[![Followers](https://img.shields.io/github/followers/TegarTheGreat?style=for-the-badge&logo=github&logoColor=white&color=1E40AF&label=Followers)](https://github.com/TegarTheGreat?tab=followers)
-
-</div>
-
----
-
-## About Me
-
-I build at the intersection of **AI and product** — autonomous agents, prompt systems,
-and developer tools that turn messy human intent into software that actually works.
-Most of what lives here started as a problem I had, and stayed because other people had it too.
-
-```ts
-const tegar = {
-  role:       "AI Engineer & Product Builder",
-  website:    "https://tegarprayuda.com",
-  focus:      ["LLM agents", "prompt engineering", "developer tooling", "automation"],
-  languages:  ["TypeScript", "Python", "JavaScript", "PHP"],
-  building:   ["SuperMD — anti-slop system prompts", "DalangAI — AI video editor"],
-  philosophy: "Ship small, ship often, keep the quality bar high.",
-};
-```
-
-- Currently deep in **LLM agents, prompt architecture, and AI-assisted workflows**
-- Shipping in **TypeScript** and **Python**, wired up with **Node.js** and **React**
-- Open to collaborating on **AI tooling** and **product experiments**
-- More about my work at **[tegarprayuda.com](https://tegarprayuda.com)**
-
----
-
-## Tech Stack
-
-<div align="center">
-
-**Languages**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-
-**Frameworks & Runtime**
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-
-**AI & Automation**
-
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Telegram](https://img.shields.io/badge/Telegram_Bots-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)
-![Markdown](https://img.shields.io/badge/Prompt_Engineering-000000?style=for-the-badge&logo=markdown&logoColor=white)
-
-**Tooling & Infra**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-</div>
-
----
-
-## Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [SuperMD](https://github.com/TegarTheGreat/SuperMD)
-
-A universal **anti-slop system prompt** — composable rules that keep LLM output sharp,
-specific and free of filler. Works across Claude, GPT and Codex-style agents.
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/CC--BY--4.0-blue?style=flat-square)
-[![Stars](https://img.shields.io/github/stars/TegarTheGreat/SuperMD?style=flat-square&color=06B6D4)](https://github.com/TegarTheGreat/SuperMD/stargazers)
-
-</td>
-<td width="50%" valign="top">
-
-### [DalangAI](https://github.com/TegarTheGreat/DalangAI)
-
-An **AI-powered video editor** — turns raw footage and a brief into an edited cut,
-the way a *dalang* directs the whole show from behind the screen.
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![AI Video](https://img.shields.io/badge/AI_Video-1E40AF?style=flat-square)
-[![Stars](https://img.shields.io/github/stars/TegarTheGreat/DalangAI?style=flat-square&color=06B6D4)](https://github.com/TegarTheGreat/DalangAI/stargazers)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [SotongAssistant](https://github.com/TegarTheGreat/SotongAssistant)
-
-A **Telegram group assistant** built on Telegraf — moderation, summaries and
-on-demand answers for busy group chats.
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Telegraf](https://img.shields.io/badge/Telegraf-26A5E4?style=flat-square&logo=telegram&logoColor=white)
-[![Stars](https://img.shields.io/github/stars/TegarTheGreat/SotongAssistant?style=flat-square&color=06B6D4)](https://github.com/TegarTheGreat/SotongAssistant/stargazers)
-
-</td>
-<td width="50%" valign="top">
-
-### [QuidChat](https://github.com/TegarTheGreat/QuidChat)
-
-A **chat application** on a modern TypeScript stack — real-time messaging,
-clean UI, MIT-licensed and open to contributions.
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![License](https://img.shields.io/badge/MIT-green?style=flat-square)
-[![Stars](https://img.shields.io/github/stars/TegarTheGreat/QuidChat?style=flat-square&color=06B6D4)](https://github.com/TegarTheGreat/QuidChat/stargazers)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-[![All repositories](https://img.shields.io/badge/Browse_all_repositories-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TegarTheGreat?tab=repositories)
-
-</div>
-
----
-
-## Repo Activity
-
-Live status across my main public repositories.
-
-| Repository | What it is | Language | Stars | Last update |
-| :--- | :--- | :--- | :--- | :--- |
-| **[SuperMD](https://github.com/TegarTheGreat/SuperMD)** | Anti-slop system prompt toolkit | ![](https://img.shields.io/github/languages/top/TegarTheGreat/SuperMD?style=flat-square&color=1E40AF&label=) | ![](https://img.shields.io/github/stars/TegarTheGreat/SuperMD?style=flat-square&color=06B6D4&label=stars) | ![](https://img.shields.io/github/last-commit/TegarTheGreat/SuperMD?style=flat-square&color=334155&label=updated) |
-| **[DalangAI](https://github.com/TegarTheGreat/DalangAI)** | AI-powered video editor | ![](https://img.shields.io/github/languages/top/TegarTheGreat/DalangAI?style=flat-square&color=1E40AF&label=) | ![](https://img.shields.io/github/stars/TegarTheGreat/DalangAI?style=flat-square&color=06B6D4&label=stars) | ![](https://img.shields.io/github/last-commit/TegarTheGreat/DalangAI?style=flat-square&color=334155&label=updated) |
-| **[SotongAssistant](https://github.com/TegarTheGreat/SotongAssistant)** | Telegram group assistant | ![](https://img.shields.io/github/languages/top/TegarTheGreat/SotongAssistant?style=flat-square&color=1E40AF&label=) | ![](https://img.shields.io/github/stars/TegarTheGreat/SotongAssistant?style=flat-square&color=06B6D4&label=stars) | ![](https://img.shields.io/github/last-commit/TegarTheGreat/SotongAssistant?style=flat-square&color=334155&label=updated) |
-| **[QuidChat](https://github.com/TegarTheGreat/QuidChat)** | Real-time chat application | ![](https://img.shields.io/github/languages/top/TegarTheGreat/QuidChat?style=flat-square&color=1E40AF&label=) | ![](https://img.shields.io/github/stars/TegarTheGreat/QuidChat?style=flat-square&color=06B6D4&label=stars) | ![](https://img.shields.io/github/last-commit/TegarTheGreat/QuidChat?style=flat-square&color=334155&label=updated) |
-
 <!--
-  The classic github-readme-stats cards used to sit here, but the shared public
-  instance (github-readme-stats.vercel.app) is heavily rate limited and renders as
-  a broken image most of the time. To bring them back, deploy your own free
-  instance and paste your Vercel hostname in place of the one below:
-  https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own-vercel-instance
-
-  <img height="165" alt="GitHub stats" src="https://YOUR-INSTANCE.vercel.app/api?username=TegarTheGreat&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight&bg_color=0B1120&title_color=06B6D4&icon_color=3B82F6&text_color=94A3B8" />
-  <img height="165" alt="Most used languages" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=TegarTheGreat&layout=compact&langs_count=8&hide_border=true&theme=tokyonight&bg_color=0B1120&title_color=06B6D4&text_color=94A3B8" />
+  Profile README for github.com/TegarTheGreat
+  - Every SVG in assets/ is generated by scripts/build_assets.py. Edit the copy there and re-run it.
+  - The blog list between the BLOG markers is refreshed daily by .github/workflows/blog.yml.
+  - The snake is drawn by .github/workflows/snake.yml and published to the `output` branch.
 -->
 
----
+<a href="https://tegarprayuda.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <img src="assets/banner-light.svg" width="100%" alt="Halo! I'm Tegar Prayuda: solopreneur, SaaS builder and AI-native engineer from Bogor, Indonesia. tegarprayuda.com">
+  </picture>
+</a>
 
-## Let's Build Something
+<p align="center">
+  <a href="https://tegarprayuda.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-website-dark.svg"><img src="assets/btn-website-light.svg" height="46" alt="tegarprayuda.com"></picture></a>
+  <a href="https://www.linkedin.com/in/tegar-prayuda"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg"><img src="assets/btn-linkedin-light.svg" height="46" alt="LinkedIn"></picture></a>
+  <a href="https://www.youtube.com/@tegarpryd"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-youtube-dark.svg"><img src="assets/btn-youtube-light.svg" height="46" alt="YouTube"></picture></a>
+  <a href="https://www.tiktok.com/@tegarpryd"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-tiktok-dark.svg"><img src="assets/btn-tiktok-light.svg" height="46" alt="TikTok"></picture></a>
+</p>
 
-I read and answer every serious message — whether it is a collaboration, a bug in one of
-my projects, or an idea you want a second pair of eyes on.
+### 👋 Halo, I'm Tegar
 
-<div align="center">
+A solopreneur from Bogor who builds anything on the internet, alone, the AI-native way.
+I own the architecture, the decisions and the quality bar; AI does the typing. I'm in my final
+semester of Business Management, so the business side gets its theory while the building side
+gets real-world reps.
 
-[![Website](https://img.shields.io/badge/tegarprayuda.com-06B6D4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://tegarprayuda.com)
-[![Email](https://img.shields.io/badge/tegarprayuda3@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tegarprayuda3@gmail.com)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg">
+  <img src="assets/about-light.svg" width="100%" alt="Terminal. whoami: solopreneur, SaaS builder, AI-native engineer, dreamer. Principles: effective beats busy; done beats perfect; tools are leverage, not shame. Motto: you don't need to be an expert to start building, you need to start building to become one.">
+</picture>
 
-<sub>Built with care · <a href="https://tegarprayuda.com">tegarprayuda.com</a></sub>
+### 🧪 Things I've built
 
-</div>
+Open source, built solo, and documented like a whole team is watching. The common thread: **AI you can trust** — it cites, it measures itself, and it says so when it doesn't know.
+
+<p align="center">
+  <a href="https://github.com/TegarTheGreat/SuperMD"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-supermd-dark.svg"><img src="assets/project-supermd-light.svg" width="49%" alt="SuperMD: a universal anti-slop system prompt, composable for any profession. 103 field modules, 34 of 34 blind wins, English and Indonesian."></picture></a>
+  <a href="https://github.com/TegarTheGreat/DalangAI"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-dalangai-dark.svg"><img src="assets/project-dalangai-light.svg" width="49%" alt="DalangAI: an agent-piloted video editor, Cursor for video. Over 1,200 tests, an MCP server, and it runs without API keys."></picture></a>
+  <a href="https://github.com/TegarTheGreat/SotongAssistant"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-sotongassistant-dark.svg"><img src="assets/project-sotongassistant-light.svg" width="49%" alt="SotongAssistant: an all-in-one Telegram assistant for moderation, onboarding, Business chats and AI, set up entirely in chat."></picture></a>
+  <a href="https://github.com/TegarTheGreat/QuidChat"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-quidchat-dark.svg"><img src="assets/project-quidchat-light.svg" width="49%" alt="QuidChat: a support assistant for businesses that never makes things up. Every claim cites your documents, or it declines."></picture></a>
+</p>
+
+<p align="right"><a href="https://github.com/TegarTheGreat?tab=repositories"><b>See every repository →</b></a></p>
+
+### 🧰 Toolbox
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <img src="assets/stack-light.svg" width="100%" alt="Languages: TypeScript, JavaScript, Python, PHP. Web: Node.js, React, Vite, Hono, Laravel, Tailwind CSS. Data: PostgreSQL, SQLite, Zod. AI and bots: Claude Code, MCP, Telegram, Markdown. Ship: Git, GitHub Actions, Docker, pnpm, npm, Biome, Linux.">
+</picture>
+
+### ✍️ Latest from my blog
+
+Stories and notes on building solo with AI, written in Bahasa Indonesia at [tegarprayuda.com/blog](https://tegarprayuda.com/blog).
+
+<!-- BLOG:START -->
+- **[Siapa Pun Bisa Menjadi Apa Pun: Pelajaran dari Para Pelopor dan Zero to One](https://tegarprayuda.com/blog/siapa-pun-bisa-menjadi-apa-pun)**  
+  <sub>Cerita · 14 Jul 2026</sub>
+- **[Bangun Dulu, Sempurnakan Nanti: Cara Saya Menyelesaikan Proyek](https://tegarprayuda.com/blog/bangun-dulu-sempurnakan-nanti)**  
+  <sub>Tutorial · 14 Jul 2026</sub>
+- **[Situs Ini Dibangun dalam Sehari — Ini Ceritanya](https://tegarprayuda.com/blog/situs-ini-dibangun-dalam-sehari)**  
+  <sub>Cerita · 14 Jul 2026</sub>
+<!-- BLOG:END -->
+
+### 🐍 Contributions, eaten daily
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TegarTheGreat/TegarTheGreat/output/snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/TegarTheGreat/TegarTheGreat/output/snake-light.svg" width="100%" alt="A snake eating my GitHub contribution graph">
+</picture>
+
+### 🤝 Let's build something
+
+Got an idea, a bug in one of my repos, or a project you want a second pair of eyes on? Say hi,
+or leave a note in my guestbook. I read every message.
+
+<p align="center">
+  <a href="https://tegarprayuda.com/kontak"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-contact-dark.svg"><img src="assets/btn-contact-light.svg" height="46" alt="Send me a message"></picture></a>
+  <a href="https://tegarprayuda.com/buku-tamu"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-guestbook-dark.svg"><img src="assets/btn-guestbook-light.svg" height="46" alt="Sign my guestbook"></picture></a>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ticker-dark.svg">
+  <img src="assets/ticker-light.svg" width="100%" alt="Ship small. Ship often. Done beats perfect. AI, but honest. Built solo in Bogor. Always be building.">
+</picture>

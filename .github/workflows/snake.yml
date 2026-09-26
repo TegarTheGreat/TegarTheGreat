@@ -1,0 +1,43 @@
+# Draws the contribution graph as a snake in the brand colours and publishes
+# the SVGs to the `output` branch, which README.md links to.
+name: Contribution snake
+
+on:
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/snake.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate the snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?color_snake=#7C3AED&color_dots=#EEEBE6,#E4D7FF,#C4A8FF,#9B6BF5,#6D28D9
+            dist/snake-dark.svg?palette=github-dark&color_snake=#A78BFA&color_dots=#262539,#3B2A6B,#5B3FA8,#8B5CF6,#C4B5FD
+
+      - name: Publish to the output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -q -m "Update contribution snake"
+          git push -f -q "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
