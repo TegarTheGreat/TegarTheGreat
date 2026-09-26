@@ -34,7 +34,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd dist
+          # snk runs in a root-owned container, so dist/ is not writable by
+          # the runner user: publish from a copy instead.
+          out="$RUNNER_TEMP/snake"
+          mkdir -p "$out"
+          cp dist/*.svg "$out"/
+          cd "$out"
           git init -q -b output
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
